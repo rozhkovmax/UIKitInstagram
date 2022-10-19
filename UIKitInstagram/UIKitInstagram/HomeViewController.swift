@@ -12,19 +12,24 @@ final class HomeViewController: UIViewController {
     
     // MARK: - Constants
     enum Constants {
-        static let indentifierHistoryCellText = "HistoryCell"
-        static let indentifierPostCellText = "PostCell"
-        static let indentifierRecommendationCellText = "RecommendationCell"
+        static let indentifierHistoryCell = "HistoryCell"
+        static let indentifierPostCell = "PostCell"
+        static let indentifierRecommendationCell = "RecommendationCell"
+    }
+    
+    enum TableCellsTyps {
+        case historyCell
+        case postCell
+        case recommendationCell
     }
     
     // MARK: - Private IBOutlet
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Private Properties
-    private let indentifierHistoryCell = Constants.indentifierHistoryCellText
-    private let indentifierPostCell = Constants.indentifierPostCellText
-    private let indentifierRecommendationCell = Constants.indentifierRecommendationCellText
-    private var refresh = UIRefreshControl()
+    private var refreshControl = UIRefreshControl()
+    private var tableCellsTyps: [TableCellsTyps] = [.historyCell, .postCell, .recommendationCell,
+                                                    .postCell, .postCell, .postCell]
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -34,19 +39,24 @@ final class HomeViewController: UIViewController {
  
     // MARK: - Private Methods
     private func setupUI() {
-        tableView.dataSource = self
+        createTableView()
         createRefreshControl()
     }
     
+    private func createTableView() {
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+    
     private func createRefreshControl() {
-        refresh.addTarget(self, action: #selector(handleRefreshAction), for: .valueChanged)
-        tableView.addSubview(refresh)
-        refresh.tintColor = .white
+        refreshControl.addTarget(self, action: #selector(handleRefreshAction), for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        refreshControl.tintColor = .white
     }
     
     // MARK: - Private objc Methods
     @objc private func handleRefreshAction() {
-        refresh.endRefreshing()
+        refreshControl.endRefreshing()
     }
 }
 
@@ -54,22 +64,38 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return tableCellsTyps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: indentifierHistoryCell, for: indexPath)
+        switch tableCellsTyps[indexPath.row] {
+        case .historyCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierHistoryCell,
+                                                     for: indexPath)
             return cell
-        case 1, 3, 4, 5:
-            let cell = tableView.dequeueReusableCell(withIdentifier: indentifierPostCell, for: indexPath)
+        case .postCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierPostCell,
+                                                     for: indexPath)
             return cell
-        case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: indentifierRecommendationCell, for: indexPath)
+        case .recommendationCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierRecommendationCell,
+                                                     for: indexPath)
             return cell
-        default:
-            return UITableViewCell()
+        }
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch tableCellsTyps[indexPath.row] {
+        case .historyCell:
+            return UITableView.automaticDimension
+        case .postCell:
+            return UITableView.automaticDimension
+        case .recommendationCell:
+            return UITableView.automaticDimension
         }
     }
 }

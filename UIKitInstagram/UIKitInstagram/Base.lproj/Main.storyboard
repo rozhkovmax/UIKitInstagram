@@ -552,7 +552,7 @@
                                                                     </constraints>
                                                                 </view>
                                                             </subviews>
-                                                            <color key="backgroundColor" name="castomWhiteColor"/>
+                                                            <color key="backgroundColor" name="castomGrayColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="jU1-E4-LEq" secondAttribute="trailing" id="0wz-xn-JNI"/>
                                                                 <constraint firstAttribute="bottom" secondItem="jU1-E4-LEq" secondAttribute="bottom" id="QX8-Rs-j45"/>
