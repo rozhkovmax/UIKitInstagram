@@ -9,6 +9,9 @@ import Foundation
 
 /// Модель комментариев
 struct Comments {
-    var lineOne: String
-    var lineTwo: String
+    var textLine: String
+    var nameText: String
+    var hourText: String
+    var avatarImge: String
+    var photoImage: String
 }
