@@ -19,14 +19,20 @@ final class ActionTableViewController: UITableViewController {
         static let lastWeekText = "На прошлой неделе"
         static let previouslyText = "Ранее"
         static let indentifierCommentCell = "CommentCell"
-        static let commentText = Comment(lineText: "Супер! Класс!", nameText: "master777",
-                                         hourText: "5 ч.", avatarImageName: "Image",
+        static let commentText = Comment(lineText: "Аватарка просто супер, где нашел? ",
+                                         nameText: "master777",
+                                         hourText: "5 ч.",
+                                         avatarImageName: "Image",
                                          photoImageName: "Pic")
-        static let commentTextTwo = Comment(lineText: "Классное фото!", nameText: "ikra_29",
-                                            hourText: "8 ч.", avatarImageName: "Ellipse",
+        static let commentTextTwo = Comment(lineText: "Классное фото! Ходил в Третьяковку?",
+                                            nameText: "ikra_29",
+                                            hourText: "8 ч.",
+                                            avatarImageName: "Ellipse",
                                             photoImageName: "Photo")
-        static let commentTextThree = Comment(lineText: "Мур!", nameText: "mMmMm",
-                                              hourText: "10 ч.", avatarImageName: "Profile 1-4",
+        static let commentTextThree = Comment(lineText: "Мур!",
+                                              nameText: "mMmMm",
+                                              hourText: "10 ч.",
+                                              avatarImageName: "Profile 1-4",
                                               photoImageName: "Photo")
     }
     
