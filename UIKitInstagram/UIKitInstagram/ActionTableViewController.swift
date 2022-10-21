@@ -19,12 +19,15 @@ final class ActionTableViewController: UITableViewController {
         static let lastWeekText = "На прошлой неделе"
         static let previouslyText = "Ранее"
         static let indentifierCommentCell = "CommentCell"
-        static let commentText = Comments(textLine: "Классное фото!", nameText: "master777",
-                                          hourText: "5 ч.", avatarImge: "Image", photoImage: "Pic")
-        static let commentTextTwo = Comments(textLine: "Класс!!!", nameText: "ikra_29",
-                                             hourText: "8 ч.", avatarImge: "Image", photoImage: "Photo")
-        static let commentTextThree = Comments(textLine: "Ура!", nameText: "mMmMm",
-                                               hourText: "10 ч.", avatarImge: "Image", photoImage: "Photo")
+        static let commentText = Comment(lineText: "Супер! Класс!", nameText: "master777",
+                                         hourText: "5 ч.", avatarImageName: "Image",
+                                         photoImageName: "Pic")
+        static let commentTextTwo = Comment(lineText: "Классное фото!", nameText: "ikra_29",
+                                            hourText: "8 ч.", avatarImageName: "Ellipse",
+                                            photoImageName: "Photo")
+        static let commentTextThree = Comment(lineText: "Мур!", nameText: "mMmMm",
+                                              hourText: "10 ч.", avatarImageName: "Profile 1-4",
+                                              photoImageName: "Photo")
     }
     
     enum TableSectionTypes {
@@ -33,6 +36,39 @@ final class ActionTableViewController: UITableViewController {
         case lastWeek
         case previously
     }
+    
+    // MARK: - Private Visual Components
+    private let requestTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = Constants.requestText
+        label.font = UIFont(name: Constants.fontTwoName, size: 20)
+        return label
+    }()
+    
+    private let todayTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = Constants.todayText
+        label.font = UIFont(name: Constants.fontOneName, size: 20)
+        return label
+    }()
+    
+    private let lastWeekTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = Constants.lastWeekText
+        label.font = UIFont(name: Constants.fontOneName, size: 20)
+        return label
+    }()
+    
+    private let previouslyTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = Constants.previouslyText
+        label.font = UIFont(name: Constants.fontOneName, size: 20)
+        return label
+    }()
     
     // MARK: - Private Properties
     private var doingRefreshControl = UIRefreshControl()
@@ -81,29 +117,13 @@ final class ActionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch sectionTypes[section] {
         case .request:
-            let headerTitle = UILabel()
-            headerTitle.textColor = .white
-            headerTitle.text = Constants.requestText
-            headerTitle.font = UIFont(name: Constants.fontTwoName, size: 20)
-            return headerTitle
+            return requestTitleLabel
         case .today:
-            let headerTitle = UILabel()
-            headerTitle.textColor = .white
-            headerTitle.text = Constants.todayText
-            headerTitle.font = UIFont(name: Constants.fontOneName, size: 20)
-            return headerTitle
+            return todayTitleLabel
         case .lastWeek:
-            let headerTitle = UILabel()
-            headerTitle.textColor = .white
-            headerTitle.text = Constants.lastWeekText
-            headerTitle.font = UIFont(name: Constants.fontOneName, size: 20)
-            return headerTitle
+            return lastWeekTitleLabel
         case .previously:
-            let headerTitle = UILabel()
-            headerTitle.textColor = .white
-            headerTitle.text = Constants.previouslyText
-            headerTitle.font = UIFont(name: Constants.fontOneName, size: 20)
-            return headerTitle
+            return previouslyTitleLabel
         }
     }
     
@@ -149,15 +169,6 @@ final class ActionTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch sectionTypes[indexPath.row] {
-        case .request:
-            return UITableView.automaticDimension
-        case .today:
-            return UITableView.automaticDimension
-        case .lastWeek:
-            return UITableView.automaticDimension
-        case .previously:
-            return UITableView.automaticDimension
-        }
+        return UITableView.automaticDimension
     }
 }

@@ -8,10 +8,10 @@
 import Foundation
 
 /// Модель комментариев
-struct Comments {
-    var textLine: String
+struct Comment {
+    var lineText: String
     var nameText: String
     var hourText: String
-    var avatarImge: String
-    var photoImage: String
+    var avatarImageName: String
+    var photoImageName: String
 }
