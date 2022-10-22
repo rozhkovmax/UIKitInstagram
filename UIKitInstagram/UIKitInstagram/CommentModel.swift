@@ -13,5 +13,6 @@ struct Comment {
     var nameText: String
     var hourText: String
     var avatarImageName: String
-    var photoImageName: String
+    var photoImageName: String?
+    var isSubscribe: Bool?
 }

@@ -10,15 +10,17 @@ import UIKit
 /// Контроллер таблицы вкладки "Действия"
 final class ActionTableViewController: UITableViewController {
     
-    // MARK: - Constants
-    enum Constants {
+    // MARK: - Private Constants
+    private enum Constants {
         static let fontOneName = "Helvetica-Bold"
         static let fontTwoName = "Helvetica"
         static let requestText = "Запросы на подписку"
         static let todayText = "Сегодня"
         static let lastWeekText = "На прошлой неделе"
+        static let lastMonthText = "В прошлом месяце"
         static let previouslyText = "Ранее"
         static let indentifierCommentCell = "CommentCell"
+        static let indentifierSubscribeCell = "SubscribeCell"
         static let commentText = Comment(lineText: "Аватарка просто супер, где нашел? ",
                                          nameText: "master777",
                                          hourText: "5 ч.",
@@ -34,12 +36,23 @@ final class ActionTableViewController: UITableViewController {
                                               hourText: "10 ч.",
                                               avatarImageName: "Profile 1-4",
                                               photoImageName: "Photo")
+        static let subscribeTextOne = Comment(lineText: "есть в Instagram. Вы можете знать этого человека",
+                                              nameText: "Lady",
+                                              hourText: "1 мес.",
+                                              avatarImageName: "Profile 1",
+                                              isSubscribe: true)
+        static let subscribeTextTwo = Comment(lineText: "подписался(-ась) на ваши обновления",
+                                              nameText: "Urban",
+                                              hourText: "1 мес.",
+                                              avatarImageName: "Profile 1-2",
+                                              isSubscribe: false)
     }
     
-    enum TableSectionTypes {
+    private enum TableSectionTypes {
         case request
         case today
         case lastWeek
+        case lastMonth
         case previously
     }
     
@@ -68,6 +81,14 @@ final class ActionTableViewController: UITableViewController {
         return label
     }()
     
+    private let lastMonthTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = Constants.lastMonthText
+        label.font = UIFont(name: Constants.fontOneName, size: 20)
+        return label
+    }()
+    
     private let previouslyTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -78,10 +99,11 @@ final class ActionTableViewController: UITableViewController {
     
     // MARK: - Private Properties
     private var doingRefreshControl = UIRefreshControl()
-    private var sectionTypes: [TableSectionTypes] = [.request, .today, .lastWeek, .previously]
+    private var sectionTypes: [TableSectionTypes] = [.request, .today, .lastWeek, .lastMonth, .previously]
     private var commentCaseToday = [Constants.commentText, Constants.commentTextTwo]
     private var commentCaseLastWeek = [Constants.commentText, Constants.commentTextTwo,
-                                       Constants.commentTextThree]
+                                       Constants.subscribeTextOne, Constants.commentTextThree]
+    private var subscribeCaseLastMonth = [Constants.subscribeTextOne, Constants.subscribeTextTwo]
     private var commentCasePreviously = [Constants.commentText, Constants.commentTextTwo,
                                          Constants.commentTextThree, Constants.commentText]
     
@@ -128,6 +150,8 @@ final class ActionTableViewController: UITableViewController {
             return todayTitleLabel
         case .lastWeek:
             return lastWeekTitleLabel
+        case .lastMonth:
+            return lastMonthTitleLabel
         case .previously:
             return previouslyTitleLabel
         }
@@ -141,6 +165,8 @@ final class ActionTableViewController: UITableViewController {
             return commentCaseToday.count
         case .lastWeek:
             return commentCaseLastWeek.count
+        case .lastMonth:
+            return subscribeCaseLastMonth.count
         case .previously:
             return commentCasePreviously.count
         }
@@ -158,10 +184,25 @@ final class ActionTableViewController: UITableViewController {
             cell.refresh(item)
             return cell
         case .lastWeek:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierCommentCell,
-                                                           for: indexPath) as? CommentTableViewCell
-            else { return UITableViewCell() }
             let item = commentCaseLastWeek[indexPath.row]
+            if item.isSubscribe != nil {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierSubscribeCell,
+                                                               for: indexPath) as? SubscribeTableViewCell
+                else { return UITableViewCell() }
+                cell.refresh(item)
+                return cell
+            } else {
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierCommentCell,
+                                                               for: indexPath) as? CommentTableViewCell
+                else { return UITableViewCell() }
+                cell.refresh(item)
+                return cell
+            }
+        case .lastMonth:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.indentifierSubscribeCell,
+                                                           for: indexPath) as? SubscribeTableViewCell
+            else { return UITableViewCell() }
+            let item = subscribeCaseLastMonth[indexPath.row]
             cell.refresh(item)
             return cell
         case .previously:
