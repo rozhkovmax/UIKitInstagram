@@ -8,7 +8,11 @@
 import Foundation
 
 /// Модель комментариев
-struct Comments {
-    var lineOne: String
-    var lineTwo: String
+struct Comment {
+    var lineText: String
+    var nameText: String
+    var hourText: String
+    var avatarImageName: String
+    var photoImageName: String?
+    var isSubscribe: Bool?
 }
