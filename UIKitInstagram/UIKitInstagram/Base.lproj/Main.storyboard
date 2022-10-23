@@ -971,7 +971,6 @@
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50j-kz-n6o">
                                                                                 <rect key="frame" x="20" y="8" width="60" height="60"/>
-                                                                                <color key="backgroundColor" name="castomGrayColor"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="60" id="biX-j7-TPt"/>
                                                                                     <constraint firstAttribute="height" constant="60" id="ypQ-WS-oU6"/>
@@ -1026,17 +1025,17 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" id="2Pj-Kp-P8D" customClass="MediaUserTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="411.5" width="414" height="600.5"/>
+                                                <rect key="frame" x="0.0" y="411.5" width="414" height="601.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Pj-Kp-P8D" id="W9a-H5-EVz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="600.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="601.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-jx-lgN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="600.5"/>
+                                                            <rect key="frame" x="0.0" y="51" width="414" height="550.5"/>
                                                             <color key="backgroundColor" name="castomWhiteColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="600" id="xDb-mc-mie"/>
+                                                                <constraint firstAttribute="height" constant="550" id="xDb-mc-mie"/>
                                                             </constraints>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="JSS-LT-L7V">
                                                                 <size key="itemSize" width="135" height="135"/>
@@ -1073,13 +1072,31 @@
                                                                 </collectionViewCell>
                                                             </cells>
                                                         </collectionView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZD7-dR-kPH">
+                                                            <rect key="frame" x="6" y="0.0" width="130" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="castomBlackColor"/>
+                                                            <imageReference key="image" image="square.grid.3x3.square" catalog="system" symbolScale="large"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j8T-sN-s4K">
+                                                            <rect key="frame" x="278" y="0.0" width="130" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="castomBlackColor"/>
+                                                            <imageReference key="image" image="person.crop.square" catalog="system" symbolScale="large"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5l-1R-tqf">
+                                                            <rect key="frame" x="142" y="0.0" width="130" height="43"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="tintColor" name="castomBlackColor"/>
+                                                            <imageReference key="image" image="tv" catalog="system" symbolScale="large"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="b6J-jx-lgN" secondAttribute="bottom" id="AYE-fw-8uu"/>
                                                         <constraint firstItem="b6J-jx-lgN" firstAttribute="leading" secondItem="W9a-H5-EVz" secondAttribute="leading" id="Eik-vL-5bC"/>
                                                         <constraint firstAttribute="trailing" secondItem="b6J-jx-lgN" secondAttribute="trailing" id="bJD-u3-zHM"/>
                                                         <constraint firstItem="b6J-jx-lgN" firstAttribute="width" secondItem="W9a-H5-EVz" secondAttribute="width" id="nTO-Y8-aYA"/>
-                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="top" secondItem="W9a-H5-EVz" secondAttribute="top" id="rQT-yW-xci"/>
+                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="top" secondItem="W9a-H5-EVz" secondAttribute="top" constant="51" id="rQT-yW-xci"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
@@ -1409,7 +1426,10 @@
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="square.grid.3x3.square" catalog="system" width="128" height="114"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
         <namedColor name="castomBlackColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

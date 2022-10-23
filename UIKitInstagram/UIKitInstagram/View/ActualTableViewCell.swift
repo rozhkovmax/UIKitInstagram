@@ -13,7 +13,7 @@ final class ActualTableViewCell: UITableViewCell {
     // MARK: - Private Constants
     private enum Constants {
         static let indentifierMediaUserCollectionCell = "ActualCollectionCell"
-        static let actualImageName = "icon Tesla"
+        static let actualImageName = "tesla"
         static let contentOneName = "Starlink"
         static let contentTwoName = "Tesla"
         static let contentThreeName = "Starship"

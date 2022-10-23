@@ -16,7 +16,7 @@ final class SubscribeTableViewCell: UITableViewCell {
         static let subscribeOffButtonName = "Вы подписаны"
     }
     
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     @IBOutlet private weak var subscribeTextLabel: UILabel!
     @IBOutlet private weak var avatarImageView: UIImageView!
     @IBOutlet private weak var subscribeButton: UIButton!

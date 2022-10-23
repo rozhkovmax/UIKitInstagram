@@ -10,14 +10,14 @@ import UIKit
 /// Контроллер домашней страницы
 final class HomeViewController: UIViewController {
     
-    // MARK: - Constants
-    enum Constants {
+    // MARK: - Private Constants
+    private enum Constants {
         static let indentifierHistoryCell = "HistoryCell"
         static let indentifierPostCell = "PostCell"
         static let indentifierRecommendationCell = "RecommendationCell"
     }
     
-    enum TableCellsTyps {
+    private enum TableCellsTyps {
         case historyCell
         case postCell
         case recommendationCell
@@ -89,13 +89,6 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch tableCellsTyps[indexPath.row] {
-        case .historyCell:
-            return UITableView.automaticDimension
-        case .postCell:
-            return UITableView.automaticDimension
-        case .recommendationCell:
-            return UITableView.automaticDimension
-        }
+        return UITableView.automaticDimension
     }
 }

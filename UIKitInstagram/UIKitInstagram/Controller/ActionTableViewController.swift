@@ -137,7 +137,7 @@ final class ActionTableViewController: UITableViewController {
         doingRefreshControl.endRefreshing()
     }
     
-    // MARK: - Table view data source
+    // MARK: - Table view data source, delegate
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTypes.count
     }
