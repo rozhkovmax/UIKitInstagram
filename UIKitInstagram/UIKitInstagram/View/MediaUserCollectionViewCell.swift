@@ -10,7 +10,7 @@ import UIKit
 /// Контроллер ячейки медиа в коллекции
 final class MediaUserCollectionViewCell: UICollectionViewCell {
     
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     @IBOutlet private weak var mediaImageView: UIImageView!
     
     // MARK: - Public Properties

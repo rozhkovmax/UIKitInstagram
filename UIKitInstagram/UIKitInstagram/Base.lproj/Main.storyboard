@@ -648,10 +648,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-wi-J0L">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                                         <color key="backgroundColor" name="castomWhiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1000" id="WSP-yj-HZt"/>
+                                            <constraint firstAttribute="height" constant="1200" id="WSP-yj-HZt"/>
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatisticsUserCell" id="NUn-yc-jSC">
@@ -941,232 +941,112 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActualCell" id="eZy-uP-xFK">
-                                                <rect key="frame" x="0.0" y="311.5" width="414" height="100.5"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActualCell" rowHeight="100" id="eZy-uP-xFK" customClass="ActualTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="311.5" width="414" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eZy-uP-xFK" id="A8d-lv-hsf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3A-oo-d5N">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100.5"/>
-                                                            <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sY9-Zl-hva">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="500" height="100.5"/>
-                                                                    <subviews>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-lz-OHn">
-                                                                            <rect key="frame" x="11" y="10" width="60" height="60.5"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="60" id="4ma-eu-gfk"/>
-                                                                                <constraint firstAttribute="height" constant="60" id="iaf-Ny-Glz"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starlink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWt-H1-oOg">
-                                                                            <rect key="frame" x="18" y="73.5" width="46" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="46" id="8sl-eI-lZz"/>
-                                                                                <constraint firstAttribute="height" constant="16" id="F3A-3b-p1j"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9v-Y7-80M">
-                                                                            <rect key="frame" x="91" y="10.5" width="60" height="60"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="8ss-c1-QGS"/>
-                                                                                <constraint firstAttribute="width" constant="60" id="A1l-L7-cZE"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZG-9s-aNn">
-                                                                            <rect key="frame" x="105" y="73.5" width="32" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="32" id="XXF-zD-6eQ"/>
-                                                                                <constraint firstAttribute="height" constant="16" id="iqP-me-w61"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R64-UM-7BK">
-                                                                            <rect key="frame" x="171" y="10.5" width="60" height="60"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="mKc-Zy-rdY"/>
-                                                                                <constraint firstAttribute="width" constant="60" id="oL6-ea-c6O"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starship" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBK-uM-0pa">
-                                                                            <rect key="frame" x="176" y="73.5" width="50" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="16" id="57Q-Jz-66H"/>
-                                                                                <constraint firstAttribute="width" constant="50" id="Weu-eE-6dz"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIS-Rb-hKr">
-                                                                            <rect key="frame" x="251" y="10.5" width="60" height="60"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="60" id="7Y2-Oe-cEu"/>
-                                                                                <constraint firstAttribute="height" constant="60" id="EAB-hz-y2u"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpaceX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9B-1P-MkH">
-                                                                            <rect key="frame" x="257.5" y="73.5" width="47" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="16" id="lNH-Ha-Io8"/>
-                                                                                <constraint firstAttribute="width" constant="47" id="xuE-o3-u1w"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-DW-Oyg">
-                                                                            <rect key="frame" x="331" y="10.5" width="60" height="60"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="60" id="DcL-OS-Pao"/>
-                                                                                <constraint firstAttribute="width" constant="60" id="cZw-go-FPk"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crew Dragon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEX-Dw-FT5">
-                                                                            <rect key="frame" x="321" y="73.5" width="80" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="80" id="57g-C6-7tb"/>
-                                                                                <constraint firstAttribute="height" constant="16" id="RkG-qf-sd2"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-7d-vSp">
-                                                                            <rect key="frame" x="411" y="10.5" width="60" height="60"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="60" id="MhZ-q3-Djv"/>
-                                                                                <constraint firstAttribute="height" constant="60" id="dfB-pj-m7f"/>
-                                                                            </constraints>
-                                                                            <state key="normal" title="Button"/>
-                                                                            <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
-                                                                                <backgroundConfiguration key="background" image="icon Tesla" imageContentMode="scaleToFill" strokeWidth="1">
-                                                                                    <color key="strokeColor" name="castomGrayColor"/>
-                                                                                </backgroundConfiguration>
-                                                                            </buttonConfiguration>
-                                                                        </button>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyperloop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHb-bM-Q33">
-                                                                            <rect key="frame" x="409.5" y="73.5" width="63" height="16"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="63" id="63f-cO-FdH"/>
-                                                                                <constraint firstAttribute="height" constant="16" id="nsh-zg-kzh"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                                            <color key="textColor" name="castomBlackColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                    <color key="backgroundColor" name="castomWhiteColor"/>
-                                                                    <constraints>
-                                                                        <constraint firstItem="XIS-Rb-hKr" firstAttribute="centerY" secondItem="gnB-DW-Oyg" secondAttribute="centerY" id="5Wg-Ye-RJD"/>
-                                                                        <constraint firstItem="wBK-uM-0pa" firstAttribute="top" secondItem="R64-UM-7BK" secondAttribute="bottom" constant="3" id="BlM-Fj-jDB"/>
-                                                                        <constraint firstItem="8ZG-9s-aNn" firstAttribute="top" secondItem="x9v-Y7-80M" secondAttribute="bottom" constant="3" id="CxV-zE-XBC"/>
-                                                                        <constraint firstItem="ypc-lz-OHn" firstAttribute="top" secondItem="sY9-Zl-hva" secondAttribute="top" constant="10" id="Doh-8g-PPw"/>
-                                                                        <constraint firstItem="ypc-lz-OHn" firstAttribute="leading" secondItem="sY9-Zl-hva" secondAttribute="leading" constant="11" id="IDt-DF-3a8"/>
-                                                                        <constraint firstItem="ypc-lz-OHn" firstAttribute="centerY" secondItem="x9v-Y7-80M" secondAttribute="centerY" id="IRx-Zl-96U"/>
-                                                                        <constraint firstItem="R64-UM-7BK" firstAttribute="leading" secondItem="x9v-Y7-80M" secondAttribute="trailing" constant="20" id="JmR-hr-wGW"/>
-                                                                        <constraint firstItem="x9v-Y7-80M" firstAttribute="centerY" secondItem="R64-UM-7BK" secondAttribute="centerY" id="Kac-ea-ntx"/>
-                                                                        <constraint firstItem="fHb-bM-Q33" firstAttribute="top" secondItem="1tm-7d-vSp" secondAttribute="bottom" constant="3" id="PKf-2D-XvH"/>
-                                                                        <constraint firstItem="z9B-1P-MkH" firstAttribute="top" secondItem="XIS-Rb-hKr" secondAttribute="bottom" constant="3" id="T9E-QH-hCy"/>
-                                                                        <constraint firstAttribute="width" constant="500" id="ThP-KN-Q0h"/>
-                                                                        <constraint firstItem="ypc-lz-OHn" firstAttribute="centerX" secondItem="MWt-H1-oOg" secondAttribute="centerX" id="XpD-3l-qeT"/>
-                                                                        <constraint firstItem="gnB-DW-Oyg" firstAttribute="centerY" secondItem="1tm-7d-vSp" secondAttribute="centerY" id="YP4-MM-xTT"/>
-                                                                        <constraint firstItem="gnB-DW-Oyg" firstAttribute="centerX" secondItem="YEX-Dw-FT5" secondAttribute="centerX" id="Yix-Gv-wkc"/>
-                                                                        <constraint firstItem="1tm-7d-vSp" firstAttribute="centerX" secondItem="fHb-bM-Q33" secondAttribute="centerX" id="eWI-kM-UhH"/>
-                                                                        <constraint firstItem="gnB-DW-Oyg" firstAttribute="leading" secondItem="XIS-Rb-hKr" secondAttribute="trailing" constant="20" id="iE0-lr-17w"/>
-                                                                        <constraint firstItem="XIS-Rb-hKr" firstAttribute="centerX" secondItem="z9B-1P-MkH" secondAttribute="centerX" id="kCJ-to-MV4"/>
-                                                                        <constraint firstItem="R64-UM-7BK" firstAttribute="centerX" secondItem="wBK-uM-0pa" secondAttribute="centerX" id="l1l-Pk-t52"/>
-                                                                        <constraint firstItem="MWt-H1-oOg" firstAttribute="top" secondItem="ypc-lz-OHn" secondAttribute="bottom" constant="3" id="mhg-u0-DVv"/>
-                                                                        <constraint firstItem="x9v-Y7-80M" firstAttribute="leading" secondItem="ypc-lz-OHn" secondAttribute="trailing" constant="20" id="qZo-3M-Kdi"/>
-                                                                        <constraint firstItem="YEX-Dw-FT5" firstAttribute="top" secondItem="gnB-DW-Oyg" secondAttribute="bottom" constant="3" id="rS1-5u-03C"/>
-                                                                        <constraint firstItem="x9v-Y7-80M" firstAttribute="centerX" secondItem="8ZG-9s-aNn" secondAttribute="centerX" id="rSW-6F-sQ8"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="MWt-H1-oOg" secondAttribute="bottom" constant="11" id="wzm-Zc-bJw"/>
-                                                                        <constraint firstAttribute="height" constant="100" id="xr4-Rr-dI6"/>
-                                                                        <constraint firstItem="1tm-7d-vSp" firstAttribute="leading" secondItem="gnB-DW-Oyg" secondAttribute="trailing" constant="20" id="yHL-re-Hmb"/>
-                                                                        <constraint firstItem="R64-UM-7BK" firstAttribute="centerY" secondItem="XIS-Rb-hKr" secondAttribute="centerY" id="zLJ-TD-oE0"/>
-                                                                        <constraint firstItem="XIS-Rb-hKr" firstAttribute="leading" secondItem="R64-UM-7BK" secondAttribute="trailing" constant="20" id="zuH-nn-4Ea"/>
-                                                                    </constraints>
-                                                                </view>
-                                                            </subviews>
+                                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G4q-fJ-AwD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                            <color key="backgroundColor" name="castomWhiteColor"/>
                                                             <constraints>
-                                                                <constraint firstItem="sY9-Zl-hva" firstAttribute="top" secondItem="Z3A-oo-d5N" secondAttribute="top" id="1yo-bK-nIr"/>
-                                                                <constraint firstItem="sY9-Zl-hva" firstAttribute="leading" secondItem="Z3A-oo-d5N" secondAttribute="leading" id="bDz-Jh-nZY"/>
-                                                                <constraint firstAttribute="trailing" secondItem="sY9-Zl-hva" secondAttribute="trailing" id="eRi-Pe-QWD"/>
-                                                                <constraint firstAttribute="bottom" secondItem="sY9-Zl-hva" secondAttribute="bottom" id="u1e-2I-YWk"/>
+                                                                <constraint firstAttribute="height" constant="100" id="2zE-xg-1eK"/>
+                                                                <constraint firstAttribute="width" constant="670" id="g5X-7a-8Hc"/>
                                                             </constraints>
-                                                        </scrollView>
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="mXd-ar-PXA">
+                                                                <size key="itemSize" width="100" height="100"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            </collectionViewFlowLayout>
+                                                            <cells>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActualCollectionCell" id="WfS-SX-89f" customClass="ActualCollectionViewCell" customModule="UIKitInstagram" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cSG-FN-pyZ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                        <autoresizingMask key="autoresizingMask"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="50j-kz-n6o">
+                                                                                <rect key="frame" x="20" y="8" width="60" height="60"/>
+                                                                                <color key="backgroundColor" name="castomGrayColor"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="60" id="biX-j7-TPt"/>
+                                                                                    <constraint firstAttribute="height" constant="60" id="ypQ-WS-oU6"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                        <integer key="value" value="30"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-jA-2aa">
+                                                                                <rect key="frame" x="0.0" y="72" width="100" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="100" id="WV3-2b-bJw"/>
+                                                                                    <constraint firstAttribute="height" constant="20" id="aQC-10-JFg"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                                <color key="textColor" name="castomBlackColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstItem="y2E-jA-2aa" firstAttribute="top" secondItem="50j-kz-n6o" secondAttribute="bottom" constant="4" id="0Ks-4b-aei"/>
+                                                                            <constraint firstItem="y2E-jA-2aa" firstAttribute="leading" secondItem="cSG-FN-pyZ" secondAttribute="leading" id="8ki-j9-PNr"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="50j-kz-n6o" secondAttribute="bottom" constant="32" id="CpS-Ww-nl8"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="y2E-jA-2aa" secondAttribute="trailing" id="KI3-KS-FPe"/>
+                                                                            <constraint firstItem="50j-kz-n6o" firstAttribute="leading" secondItem="cSG-FN-pyZ" secondAttribute="leading" constant="20" symbolic="YES" id="aTD-AJ-bGG"/>
+                                                                            <constraint firstItem="50j-kz-n6o" firstAttribute="top" secondItem="cSG-FN-pyZ" secondAttribute="top" constant="8" id="dOT-re-lZj"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="50j-kz-n6o" secondAttribute="trailing" constant="20" symbolic="YES" id="gaf-RM-1eN"/>
+                                                                        </constraints>
+                                                                    </collectionViewCellContentView>
+                                                                    <color key="backgroundColor" name="castomWhiteColor"/>
+                                                                    <connections>
+                                                                        <outlet property="actualImageView" destination="50j-kz-n6o" id="xn7-So-z3S"/>
+                                                                        <outlet property="actualNameLabel" destination="y2E-jA-2aa" id="LqF-7R-E2S"/>
+                                                                    </connections>
+                                                                </collectionViewCell>
+                                                            </cells>
+                                                        </collectionView>
                                                     </subviews>
-                                                    <color key="backgroundColor" name="castomWhiteColor"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="Z3A-oo-d5N" secondAttribute="trailing" id="2m7-w0-WXo"/>
-                                                        <constraint firstItem="Z3A-oo-d5N" firstAttribute="height" secondItem="A8d-lv-hsf" secondAttribute="height" id="DvK-kk-7lh"/>
-                                                        <constraint firstItem="sY9-Zl-hva" firstAttribute="height" secondItem="A8d-lv-hsf" secondAttribute="height" id="F5x-wg-CEb"/>
-                                                        <constraint firstItem="Z3A-oo-d5N" firstAttribute="leading" secondItem="A8d-lv-hsf" secondAttribute="leading" id="ROv-gT-yCL"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Z3A-oo-d5N" secondAttribute="bottom" id="oWe-O4-I8i"/>
-                                                        <constraint firstItem="Z3A-oo-d5N" firstAttribute="top" secondItem="A8d-lv-hsf" secondAttribute="top" id="vZy-kD-rTI"/>
+                                                        <constraint firstItem="G4q-fJ-AwD" firstAttribute="leading" secondItem="A8d-lv-hsf" secondAttribute="leading" id="3Sq-vp-NYl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="G4q-fJ-AwD" secondAttribute="trailing" id="Kli-em-YC9"/>
+                                                        <constraint firstItem="G4q-fJ-AwD" firstAttribute="height" secondItem="A8d-lv-hsf" secondAttribute="height" id="kcg-qQ-Fjz"/>
+                                                        <constraint firstItem="G4q-fJ-AwD" firstAttribute="top" secondItem="A8d-lv-hsf" secondAttribute="top" id="nKc-A4-SoG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="G4q-fJ-AwD" secondAttribute="bottom" id="r8M-2q-SP3"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
+                                                <connections>
+                                                    <outlet property="actualCollectionView" destination="G4q-fJ-AwD" id="wqI-2D-lZP"/>
+                                                </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" rowHeight="611" id="2Pj-Kp-P8D" customClass="MediaUserTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="412" width="414" height="611"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" id="2Pj-Kp-P8D" customClass="MediaUserTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="411.5" width="414" height="600.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Pj-Kp-P8D" id="W9a-H5-EVz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="600.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-jx-lgN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="600.5"/>
                                                             <color key="backgroundColor" name="castomWhiteColor"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="600" id="xDb-mc-mie"/>
                                                             </constraints>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="JSS-LT-L7V">
                                                                 <size key="itemSize" width="135" height="135"/>
-                                                                <size key="headerReferenceSize" width="50" height="50"/>
+                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
                                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaUserCollectionCell" id="bNk-Ro-88e" customClass="MediaUserCollectionViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="50" width="135" height="135"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mxL-Sa-ds9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
@@ -1192,52 +1072,6 @@
                                                                     </connections>
                                                                 </collectionViewCell>
                                                             </cells>
-                                                            <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaUserCollectionCell" id="beB-JF-LMW" customClass="MediaUserCollectionViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-mQ-hl0">
-                                                                        <rect key="frame" x="0.0" y="-2" width="136" height="54"/>
-                                                                        <color key="tintColor" name="castomBlackColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="50" id="GzC-4u-Tah"/>
-                                                                            <constraint firstAttribute="width" constant="136" id="VCG-qo-5AH"/>
-                                                                        </constraints>
-                                                                        <imageReference key="image" image="square.grid.3x3.square" catalog="system" symbolScale="large"/>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-WN-hmI">
-                                                                        <rect key="frame" x="138" y="-2" width="138" height="55"/>
-                                                                        <color key="tintColor" name="castomBlackColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="137" id="2Ur-WQ-NVI"/>
-                                                                            <constraint firstAttribute="height" constant="50" id="X8I-iD-XcL"/>
-                                                                        </constraints>
-                                                                        <imageReference key="image" image="tv" catalog="system" symbolScale="large"/>
-                                                                    </imageView>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-C4-0Ua">
-                                                                        <rect key="frame" x="278" y="-2" width="136" height="54"/>
-                                                                        <color key="tintColor" name="castomBlackColor"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="50" id="lBN-xX-9ee"/>
-                                                                            <constraint firstAttribute="width" constant="136" id="zGo-tN-72M"/>
-                                                                        </constraints>
-                                                                        <imageReference key="image" image="person.crop.square" catalog="system" symbolScale="large"/>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <color key="backgroundColor" red="1" green="0.98649140329999996" blue="0.2870743946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstItem="Pza-WN-hmI" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="6ud-2M-sNa"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="gK2-C4-0Ua" secondAttribute="trailing" id="P8C-p7-vGE"/>
-                                                                    <constraint firstItem="gK2-C4-0Ua" firstAttribute="leading" secondItem="Pza-WN-hmI" secondAttribute="trailing" constant="2" id="Q8u-78-cpq"/>
-                                                                    <constraint firstItem="gK2-C4-0Ua" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="WP2-48-aWb"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="gK2-C4-0Ua" secondAttribute="bottom" id="Z48-tK-fHB"/>
-                                                                    <constraint firstItem="GYs-mQ-hl0" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="b5v-21-MeX"/>
-                                                                    <constraint firstItem="Pza-WN-hmI" firstAttribute="leading" secondItem="GYs-mQ-hl0" secondAttribute="trailing" constant="2" id="bLj-sL-li4"/>
-                                                                    <constraint firstItem="GYs-mQ-hl0" firstAttribute="leading" secondItem="beB-JF-LMW" secondAttribute="leading" id="izf-hx-1aQ"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="GYs-mQ-hl0" secondAttribute="bottom" id="pg5-HN-69I"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="Pza-WN-hmI" secondAttribute="bottom" id="tvf-lN-XyC"/>
-                                                                </constraints>
-                                                            </collectionReusableView>
                                                         </collectionView>
                                                     </subviews>
                                                     <constraints>
@@ -1248,6 +1082,7 @@
                                                         <constraint firstItem="b6J-jx-lgN" firstAttribute="top" secondItem="W9a-H5-EVz" secondAttribute="top" id="rQT-yW-xci"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" name="castomWhiteColor"/>
                                                 <connections>
                                                     <outlet property="collectionView" destination="b6J-jx-lgN" id="fmc-pL-LBB"/>
                                                 </connections>
@@ -1568,17 +1403,13 @@
         <image name="facebook-messenger" width="30" height="30"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="icon Tesla" width="690" height="570"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
-        <image name="square.grid.3x3.square" catalog="system" width="128" height="114"/>
-        <image name="tv" catalog="system" width="128" height="97"/>
         <namedColor name="castomBlackColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
