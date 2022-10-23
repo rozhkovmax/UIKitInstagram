@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 /// Контроллер  страницы поиска
 final class SearchViewController: UIViewController {
     
@@ -16,7 +17,6 @@ final class SearchViewController: UIViewController {
         static let indentifierActualCell = "ActualCell"
         static let indentifierMediaUserCell = "MediaUserCell"
         static let userName = "elonmuskrus"
-        static let indentifierMediaUserCollectionCell = "MediaUserCollectionCell"
     }
     
     private enum TableCellsTyps {
@@ -28,19 +28,11 @@ final class SearchViewController: UIViewController {
     
     // MARK: - Private IBOutlet
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Private Properties
     private var refreshControl = UIRefreshControl()
     private var tableCellsTyps: [TableCellsTyps] = [.statisticsUserCell, .infoUserCell,
                                                     .actualCell, .mediaUserCell]
-    private var itemMedia: [Media] = {
-        var photoOne = Media()
-        photoOne.contentImageName = "musk"
-        var photoTwo = Media()
-        photoTwo.contentImageName = "musk2"
-        return [photoOne, photoTwo]
-    }()
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -53,17 +45,11 @@ final class SearchViewController: UIViewController {
         createBarButtonItem()
         createTableView()
         createRefreshControl()
-        createCollectionView()
     }
     
     private func createTableView() {
         tableView.dataSource = self
         tableView.delegate = self
-    }
-    
-    private func createCollectionView() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
     }
     
     private func createBarButtonItem() {
@@ -119,24 +105,5 @@ extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
-}
-
-// MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return itemMedia.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier:
-                                                                Constants.indentifierMediaUserCollectionCell,
-                                                             for: indexPath) as? MediaUserCollectionViewCell {
-            itemCell.media = itemMedia[indexPath.row]
-            return itemCell
-        }
-        return UICollectionViewCell()
     }
 }

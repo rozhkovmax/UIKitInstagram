@@ -717,7 +717,7 @@
                                                             <color key="textColor" name="castomBlackColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarMask" translatesAutoresizingMaskIntoConstraints="NO" id="lGp-no-vVW">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarMusk" translatesAutoresizingMaskIntoConstraints="NO" id="lGp-no-vVW">
                                                             <rect key="frame" x="11" y="14" width="100" height="100.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="sg8-8y-oOY"/>
@@ -1145,53 +1145,112 @@
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" rowHeight="563" id="2Pj-Kp-P8D">
-                                                <rect key="frame" x="0.0" y="412" width="414" height="563"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" rowHeight="611" id="2Pj-Kp-P8D" customClass="MediaUserTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="412" width="414" height="611"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Pj-Kp-P8D" id="W9a-H5-EVz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="563"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b6J-jx-lgN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="563"/>
-                                                            <color key="backgroundColor" red="0.40645373699999998" green="1" blue="0.2018352967" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="611"/>
+                                                            <color key="backgroundColor" name="castomWhiteColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="600" id="xDb-mc-mie"/>
+                                                            </constraints>
                                                             <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="JSS-LT-L7V">
                                                                 <size key="itemSize" width="135" height="135"/>
-                                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                <size key="headerReferenceSize" width="50" height="50"/>
                                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
                                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaUserCollectionCell" id="bNk-Ro-88e" customClass="MediaUserCollectionViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
+                                                                    <rect key="frame" x="0.0" y="50" width="135" height="135"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mxL-Sa-ds9">
                                                                         <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                                                         <autoresizingMask key="autoresizingMask"/>
                                                                         <subviews>
-                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mHN-Dj-U40">
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mHN-Dj-U40">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
-                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="135" id="B28-Xf-Dvi"/>
+                                                                                    <constraint firstAttribute="width" constant="135" id="BEo-Sq-9MC"/>
+                                                                                </constraints>
                                                                             </imageView>
                                                                         </subviews>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="mHN-Dj-U40" secondAttribute="trailing" id="UnV-GK-Gkd"/>
+                                                                            <constraint firstItem="mHN-Dj-U40" firstAttribute="leading" secondItem="mxL-Sa-ds9" secondAttribute="leading" id="VMw-Ir-F7s"/>
+                                                                            <constraint firstItem="mHN-Dj-U40" firstAttribute="top" secondItem="mxL-Sa-ds9" secondAttribute="top" id="vOq-KH-aFF"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="mHN-Dj-U40" secondAttribute="bottom" id="wtt-PS-ct4"/>
+                                                                        </constraints>
                                                                     </collectionViewCellContentView>
                                                                     <connections>
                                                                         <outlet property="mediaImageView" destination="mHN-Dj-U40" id="0vX-4c-4ut"/>
                                                                     </connections>
                                                                 </collectionViewCell>
                                                             </cells>
+                                                            <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MediaUserCollectionCell" id="beB-JF-LMW" customClass="MediaUserCollectionViewCell" customModule="UIKitInstagram" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GYs-mQ-hl0">
+                                                                        <rect key="frame" x="0.0" y="-2" width="136" height="54"/>
+                                                                        <color key="tintColor" name="castomBlackColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="GzC-4u-Tah"/>
+                                                                            <constraint firstAttribute="width" constant="136" id="VCG-qo-5AH"/>
+                                                                        </constraints>
+                                                                        <imageReference key="image" image="square.grid.3x3.square" catalog="system" symbolScale="large"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-WN-hmI">
+                                                                        <rect key="frame" x="138" y="-2" width="138" height="55"/>
+                                                                        <color key="tintColor" name="castomBlackColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="137" id="2Ur-WQ-NVI"/>
+                                                                            <constraint firstAttribute="height" constant="50" id="X8I-iD-XcL"/>
+                                                                        </constraints>
+                                                                        <imageReference key="image" image="tv" catalog="system" symbolScale="large"/>
+                                                                    </imageView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-C4-0Ua">
+                                                                        <rect key="frame" x="278" y="-2" width="136" height="54"/>
+                                                                        <color key="tintColor" name="castomBlackColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="lBN-xX-9ee"/>
+                                                                            <constraint firstAttribute="width" constant="136" id="zGo-tN-72M"/>
+                                                                        </constraints>
+                                                                        <imageReference key="image" image="person.crop.square" catalog="system" symbolScale="large"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="1" green="0.98649140329999996" blue="0.2870743946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Pza-WN-hmI" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="6ud-2M-sNa"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="gK2-C4-0Ua" secondAttribute="trailing" id="P8C-p7-vGE"/>
+                                                                    <constraint firstItem="gK2-C4-0Ua" firstAttribute="leading" secondItem="Pza-WN-hmI" secondAttribute="trailing" constant="2" id="Q8u-78-cpq"/>
+                                                                    <constraint firstItem="gK2-C4-0Ua" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="WP2-48-aWb"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="gK2-C4-0Ua" secondAttribute="bottom" id="Z48-tK-fHB"/>
+                                                                    <constraint firstItem="GYs-mQ-hl0" firstAttribute="top" secondItem="beB-JF-LMW" secondAttribute="top" id="b5v-21-MeX"/>
+                                                                    <constraint firstItem="Pza-WN-hmI" firstAttribute="leading" secondItem="GYs-mQ-hl0" secondAttribute="trailing" constant="2" id="bLj-sL-li4"/>
+                                                                    <constraint firstItem="GYs-mQ-hl0" firstAttribute="leading" secondItem="beB-JF-LMW" secondAttribute="leading" id="izf-hx-1aQ"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="GYs-mQ-hl0" secondAttribute="bottom" id="pg5-HN-69I"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Pza-WN-hmI" secondAttribute="bottom" id="tvf-lN-XyC"/>
+                                                                </constraints>
+                                                            </collectionReusableView>
                                                         </collectionView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="leading" secondItem="W9a-H5-EVz" secondAttribute="leading" id="AMd-tX-5Be"/>
-                                                        <constraint firstAttribute="bottom" secondItem="b6J-jx-lgN" secondAttribute="bottom" id="ApY-Qm-dws"/>
-                                                        <constraint firstAttribute="trailing" secondItem="b6J-jx-lgN" secondAttribute="trailing" id="Kq3-ET-hao"/>
-                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="height" secondItem="W9a-H5-EVz" secondAttribute="height" id="TIS-9j-fEs"/>
-                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="top" secondItem="W9a-H5-EVz" secondAttribute="top" id="gzb-pa-8vw"/>
-                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="width" secondItem="W9a-H5-EVz" secondAttribute="width" id="hMi-UI-GMO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="b6J-jx-lgN" secondAttribute="bottom" id="AYE-fw-8uu"/>
+                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="leading" secondItem="W9a-H5-EVz" secondAttribute="leading" id="Eik-vL-5bC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="b6J-jx-lgN" secondAttribute="trailing" id="bJD-u3-zHM"/>
+                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="width" secondItem="W9a-H5-EVz" secondAttribute="width" id="nTO-Y8-aYA"/>
+                                                        <constraint firstItem="b6J-jx-lgN" firstAttribute="top" secondItem="W9a-H5-EVz" secondAttribute="top" id="rQT-yW-xci"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <connections>
+                                                    <outlet property="collectionView" destination="b6J-jx-lgN" id="fmc-pL-LBB"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -1501,7 +1560,7 @@
         <image name="Profile 1-2" width="70" height="70"/>
         <image name="Profile 1-4" width="70" height="70"/>
         <image name="Profile pic" width="70" height="72"/>
-        <image name="avatarMask" width="190" height="190"/>
+        <image name="avatarMusk" width="190" height="190"/>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
@@ -1516,7 +1575,10 @@
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="square.grid.3x3.square" catalog="system" width="128" height="114"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
         <namedColor name="castomBlackColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1528,9 +1590,6 @@
         </namedColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
