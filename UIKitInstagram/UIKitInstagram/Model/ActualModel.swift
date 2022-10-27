@@ -9,6 +9,6 @@ import Foundation
 
 // Модель сторис
 struct Actual {
-    var contentImageName: String?
-    var contentName: String?
+    let contentImageName: String?
+    let contentName: String?
 }

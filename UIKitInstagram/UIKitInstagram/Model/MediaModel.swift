@@ -9,5 +9,5 @@ import Foundation
 
 // Модель медиа
 struct Media {
-    var contentImageName: String?
+    let contentImageName: String?
 }

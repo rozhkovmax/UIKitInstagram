@@ -54,7 +54,6 @@ final class HomeViewController: UIViewController {
         refreshControl.tintColor = .white
     }
     
-    // MARK: - Private objc Methods
     @objc private func handleRefreshAction() {
         refreshControl.endRefreshing()
     }
@@ -64,7 +63,7 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableCellsTyps.count
+        tableCellsTyps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -89,6 +88,6 @@ extension HomeViewController: UITableViewDataSource {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        UITableView.automaticDimension
     }
 }

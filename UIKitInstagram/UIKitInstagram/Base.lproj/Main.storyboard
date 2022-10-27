@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Pv-me-Obk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Pv-me-Obk">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,11 +17,11 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="BYZ-38-t0r" customClass="HomeViewController" customModule="UIKitInstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="721"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="yhz-kv-j1d">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V54-Nf-nO5">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
@@ -30,7 +31,7 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="2Je-Pz-SGJ">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="150.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="414" height="150.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Je-Pz-SGJ" id="TDI-xH-JRO">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="150.5"/>
@@ -178,7 +179,7 @@
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="ybc-G1-6Gl">
-                                                <rect key="frame" x="0.0" y="195" width="414" height="700.5"/>
+                                                <rect key="frame" x="0.0" y="200.5" width="414" height="700.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ybc-G1-6Gl" id="x3O-Xe-ZRV">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="700.5"/>
@@ -210,7 +211,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCh-gY-Gel" userLabel="...">
-                                                            <rect key="frame" x="350" y="21.5" width="44" height="31"/>
+                                                            <rect key="frame" x="350" y="21.5" width="48" height="34"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain">
                                                                 <imageReference key="image" image="ellipsis" catalog="system" symbolScale="large"/>
@@ -375,7 +376,7 @@
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecommendationCell" id="uw6-oI-dPt">
-                                                <rect key="frame" x="0.0" y="895.5" width="414" height="300.5"/>
+                                                <rect key="frame" x="0.0" y="901" width="414" height="300.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uw6-oI-dPt" id="gOl-jJ-xCI">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="300.5"/>
@@ -641,11 +642,11 @@
             <objects>
                 <viewController id="j6L-1M-o09" customClass="SearchViewController" customModule="UIKitInstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLD-YH-gO4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="804"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJD-2j-eqQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="721"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-wi-J0L">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
@@ -655,7 +656,7 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatisticsUserCell" id="NUn-yc-jSC">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="128.5"/>
+                                                <rect key="frame" x="0.0" y="50" width="414" height="128.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NUn-yc-jSC" id="iRN-IE-FaJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="128.5"/>
@@ -756,7 +757,7 @@
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoUserCell" id="nBg-Cu-7FO">
-                                                <rect key="frame" x="0.0" y="173" width="414" height="138.5"/>
+                                                <rect key="frame" x="0.0" y="178.5" width="414" height="138.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nBg-Cu-7FO" id="EvG-TS-Aw6">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="138.5"/>
@@ -942,7 +943,7 @@
                                                 <color key="backgroundColor" name="castomWhiteColor"/>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActualCell" rowHeight="100" id="eZy-uP-xFK" customClass="ActualTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="311.5" width="414" height="100"/>
+                                                <rect key="frame" x="0.0" y="317" width="414" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eZy-uP-xFK" id="A8d-lv-hsf">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -1025,7 +1026,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MediaUserCell" id="2Pj-Kp-P8D" customClass="MediaUserTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="411.5" width="414" height="601.5"/>
+                                                <rect key="frame" x="0.0" y="417" width="414" height="601.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Pj-Kp-P8D" id="W9a-H5-EVz">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="601.5"/>
@@ -1071,6 +1072,10 @@
                                                                     </connections>
                                                                 </collectionViewCell>
                                                             </cells>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="2Pj-Kp-P8D" id="eE2-ox-akb"/>
+                                                                <outlet property="delegate" destination="2Pj-Kp-P8D" id="pG6-ep-APb"/>
+                                                            </connections>
                                                         </collectionView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZD7-dR-kPH">
                                                             <rect key="frame" x="6" y="0.0" width="130" height="43"/>
@@ -1149,12 +1154,12 @@
             <objects>
                 <tableViewController id="qdQ-eh-hNH" customClass="ActionTableViewController" customModule="UIKitInstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="GDP-iD-ubG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="721"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="castomWhiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="100" id="gtI-Sv-b20" customClass="CommentTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="49.5" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gtI-Sv-b20" id="Mqo-SP-SCT">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -1212,7 +1217,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubscribeCell" rowHeight="100" id="U5G-GG-rhT" customClass="SubscribeTableViewCell" customModule="UIKitInstagram" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="149.5" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="155.5" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U5G-GG-rhT" id="1AM-Yr-ysQ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -1347,7 +1352,7 @@
                     <tabBarItem key="tabBarItem" title=" " image="Home - Outline" selectedImage="Home" id="kub-Ya-R5n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="v5o-dR-kzs">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="castomWhiteColor"/>
                     </navigationBar>
@@ -1367,7 +1372,7 @@
                     <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" selectedImage="heart.fill" id="b17-QL-Ph8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="1vK-Kx-uxe">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="castomWhiteColor"/>
                     </navigationBar>
@@ -1387,7 +1392,7 @@
                     <tabBarItem key="tabBarItem" image="magnifyingglass" catalog="system" id="OW3-Po-iY3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Zp5-P0-eru">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="castomWhiteColor"/>
                     </navigationBar>
@@ -1413,23 +1418,23 @@
         <image name="Profile 1-4" width="70" height="70"/>
         <image name="Profile pic" width="70" height="72"/>
         <image name="avatarMusk" width="190" height="190"/>
-        <image name="bookmark" catalog="system" width="112" height="128"/>
-        <image name="chevron.down" catalog="system" width="128" height="72"/>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="facebook-messenger" width="30" height="30"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message" catalog="system" width="128" height="116"/>
         <image name="multiply" catalog="system" width="128" height="111"/>
-        <image name="paperplane" catalog="system" width="128" height="118"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
-        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="square.grid.3x3.square" catalog="system" width="128" height="114"/>
-        <image name="tv" catalog="system" width="128" height="97"/>
+        <image name="tv" catalog="system" width="128" height="95"/>
         <namedColor name="castomBlackColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

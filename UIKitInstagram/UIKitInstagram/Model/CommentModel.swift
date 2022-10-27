@@ -9,10 +9,10 @@ import Foundation
 
 /// Модель комментариев
 struct Comment {
-    var lineText: String
-    var nameText: String
-    var hourText: String
-    var avatarImageName: String
-    var photoImageName: String?
-    var isSubscribe: Bool?
+    let lineText: String
+    let nameText: String
+    let hourText: String
+    let avatarImageName: String
+    let photoImageName: String?
+    let isSubscribe: Bool?
 }

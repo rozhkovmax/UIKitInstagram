@@ -25,26 +25,26 @@ final class ActionTableViewController: UITableViewController {
                                          nameText: "master777",
                                          hourText: "5 ч.",
                                          avatarImageName: "Image",
-                                         photoImageName: "Pic")
+                                         photoImageName: "Pic", isSubscribe: nil)
         static let commentTextTwo = Comment(lineText: "Классное фото! Ходил в Третьяковку?",
                                             nameText: "ikra_29",
                                             hourText: "8 ч.",
                                             avatarImageName: "Ellipse",
-                                            photoImageName: "Photo")
+                                            photoImageName: "Photo", isSubscribe: nil)
         static let commentTextThree = Comment(lineText: "Мур!",
                                               nameText: "mMmMm",
                                               hourText: "10 ч.",
                                               avatarImageName: "Profile 1-4",
-                                              photoImageName: "Photo")
+                                              photoImageName: "Photo", isSubscribe: nil)
         static let subscribeTextOne = Comment(lineText: "есть в Instagram. Вы можете знать этого человека",
                                               nameText: "Lady",
                                               hourText: "1 мес.",
-                                              avatarImageName: "Profile 1",
+                                              avatarImageName: "Profile 1", photoImageName: nil,
                                               isSubscribe: true)
         static let subscribeTextTwo = Comment(lineText: "подписался(-ась) на ваши обновления",
                                               nameText: "Urban",
                                               hourText: "1 мес.",
-                                              avatarImageName: "Profile 1-2",
+                                              avatarImageName: "Profile 1-2", photoImageName: nil,
                                               isSubscribe: false)
     }
     
@@ -132,14 +132,13 @@ final class ActionTableViewController: UITableViewController {
         doingRefreshControl.tintColor = .white
     }
     
-    // MARK: - Private objc Methods
     @objc private func handleRefreshAction() {
         doingRefreshControl.endRefreshing()
     }
     
     // MARK: - Table view data source, delegate
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionTypes.count
+        sectionTypes.count
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -216,6 +215,6 @@ final class ActionTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        UITableView.automaticDimension
     }
 }

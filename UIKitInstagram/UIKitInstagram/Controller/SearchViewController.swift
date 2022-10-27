@@ -29,7 +29,7 @@ final class SearchViewController: UIViewController {
     // MARK: - Private IBOutlet
     @IBOutlet private weak var tableView: UITableView!
     
-    // MARK: - Private Properties
+    // MARK: Private Visual Component
     private var refreshControl = UIRefreshControl()
     private var tableCellsTyps: [TableCellsTyps] = [.statisticsUserCell, .infoUserCell,
                                                     .actualCell, .mediaUserCell]
@@ -64,7 +64,6 @@ final class SearchViewController: UIViewController {
         refreshControl.tintColor = .white
     }
     
-    // MARK: - Private objc Methods
     @objc private func handleRefreshAction() {
         refreshControl.endRefreshing()
     }
@@ -74,7 +73,7 @@ final class SearchViewController: UIViewController {
 extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableCellsTyps.count
+        tableCellsTyps.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,6 +103,6 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        UITableView.automaticDimension
     }
 }

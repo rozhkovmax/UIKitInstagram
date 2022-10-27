@@ -26,25 +26,13 @@ final class ActualTableViewCell: UITableViewCell {
     @IBOutlet private weak var actualCollectionView: UICollectionView!
     
     // MARK: - Private Properties
-    private var itemActual: [Actual] = {
-        var contentOne = Actual()
-        contentOne.contentImageName = Constants.actualImageName
-        contentOne.contentName = Constants.contentOneName
-        var contentTwo = Actual()
-        contentTwo.contentImageName = Constants.actualImageName
-        contentTwo.contentName = Constants.contentTwoName
-        var contentThree = Actual()
-        contentThree.contentImageName = Constants.actualImageName
-        contentThree.contentName = Constants.contentThreeName
-        var contentFour = Actual()
-        contentFour.contentImageName = Constants.actualImageName
-        contentFour.contentName = Constants.contentFourName
-        var contentFive = Actual()
-        contentFive.contentImageName = Constants.actualImageName
-        contentFive.contentName = Constants.contentFourName
-        var contentSix = Actual()
-        contentSix.contentImageName = Constants.actualImageName
-        contentSix.contentName = Constants.contentSixName
+    private let itemActual: [Actual] = {
+        let contentOne = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentOneName)
+        let contentTwo = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentTwoName)
+        let contentThree = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentThreeName)
+        let contentFour = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentFourName)
+        let contentFive = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentFourName)
+        let contentSix = Actual(contentImageName: Constants.actualImageName, contentName: Constants.contentSixName)
         return [contentOne, contentTwo, contentThree, contentFour, contentFive, contentSix]
     }()
     
@@ -52,10 +40,6 @@ final class ActualTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         createActualCollectionView()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
     }
     
     // MARK: - Private Methods
@@ -69,7 +53,7 @@ final class ActualTableViewCell: UITableViewCell {
 extension ActualTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return itemActual.count
+        itemActual.count
     }
     
     func collectionView(_ collectionView: UICollectionView,

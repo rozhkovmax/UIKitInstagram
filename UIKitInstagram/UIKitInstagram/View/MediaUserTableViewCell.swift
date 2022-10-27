@@ -22,39 +22,20 @@ final class MediaUserTableViewCell: UITableViewCell {
     @IBOutlet private weak var collectionView: UICollectionView!
 
     // MARK: - Private Properties
-    private var itemMedia: [Media] = {
-        var photoOne = Media()
-        photoOne.contentImageName = Constants.photoOneImageName
-        var photoTwo = Media()
-        photoTwo.contentImageName = Constants.photoTwoImageName
-        var photoThree = Media()
-        photoThree.contentImageName = Constants.photoThreeImageName
+    private let mediaItems: [Media] = {
+        let photoOne = Media(contentImageName: Constants.photoOneImageName)
+        let photoTwo = Media(contentImageName: Constants.photoTwoImageName)
+        let photoThree = Media(contentImageName: Constants.photoThreeImageName)
         return [photoOne, photoTwo, photoThree, photoThree, photoOne, photoTwo,
                 photoTwo, photoThree, photoOne, photoOne, photoTwo, photoThree]
     }()
-    
-    // MARK: - Life Cycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        createCollectionView()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    // MARK: - Private Methods
-    private func createCollectionView() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
-    }
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
 extension MediaUserTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return itemMedia.count
+        mediaItems.count
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -62,7 +43,7 @@ extension MediaUserTableViewCell: UICollectionViewDataSource, UICollectionViewDe
         if let itemCell = collectionView.dequeueReusableCell(withReuseIdentifier:
                                                                 Constants.indentifierMediaUserCollectionCell,
                                                              for: indexPath) as? MediaUserCollectionViewCell {
-            itemCell.media = itemMedia[indexPath.row]
+            itemCell.media = mediaItems[indexPath.row]
             return itemCell
         }
         return UICollectionViewCell()
