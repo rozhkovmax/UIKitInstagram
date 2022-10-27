@@ -15,7 +15,7 @@ final class CommentTableViewCell: UITableViewCell {
         static let defaultImageName = "questionmark.circle"
     }
     
-    // MARK: - IBOutlet
+    // MARK: - Private IBOutlet
     @IBOutlet private weak var avatarImageView: UIImageView!
     @IBOutlet private weak var photoImageView: UIImageView!
     @IBOutlet private weak var commentTextLabel: UILabel!
