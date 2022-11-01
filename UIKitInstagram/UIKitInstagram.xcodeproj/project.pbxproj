@@ -7,19 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94758B142900255D00E13970 /* ActionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B132900255D00E13970 /* ActionTableViewController.swift */; };
+		94758B1829003E3400E13970 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B1729003E3400E13970 /* CommentModel.swift */; };
+		94758B1C29007DA900E13970 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B1B29007DA900E13970 /* CommentTableViewCell.swift */; };
+		94758B2429041AEC00E13970 /* SubscribeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B2329041AEC00E13970 /* SubscribeTableViewCell.swift */; };
+		94758B26290427A600E13970 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B25290427A600E13970 /* NSMutableAttributedString.swift */; };
+		94758B2A29044D4700E13970 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B2929044D4700E13970 /* SearchViewController.swift */; };
+		94758B2C2905529B00E13970 /* MediaUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B2B2905529B00E13970 /* MediaUserCollectionViewCell.swift */; };
+		94758B2E290555F700E13970 /* MediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B2D290555F700E13970 /* MediaModel.swift */; };
+		94758B342905810E00E13970 /* MediaUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B332905810E00E13970 /* MediaUserTableViewCell.swift */; };
+		94758B362905B44500E13970 /* ActualModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B352905B44500E13970 /* ActualModel.swift */; };
+		94758B382905B4E100E13970 /* ActualCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B372905B4E100E13970 /* ActualCollectionViewCell.swift */; };
+		94758B3A2905B7A300E13970 /* ActualTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94758B392905B7A300E13970 /* ActualTableViewCell.swift */; };
 		949C36CF28FD4FF70049BEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C36CE28FD4FF70049BEDE /* AppDelegate.swift */; };
 		949C36D128FD4FF70049BEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C36D028FD4FF70049BEDE /* SceneDelegate.swift */; };
-		949C36D328FD4FF70049BEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C36D228FD4FF70049BEDE /* ViewController.swift */; };
+		949C36D328FD4FF70049BEDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C36D228FD4FF70049BEDE /* HomeViewController.swift */; };
 		949C36D628FD4FF70049BEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949C36D428FD4FF70049BEDE /* Main.storyboard */; };
 		949C36D828FD4FF90049BEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 949C36D728FD4FF90049BEDE /* Assets.xcassets */; };
 		949C36DB28FD4FF90049BEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 949C36D928FD4FF90049BEDE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		94758B132900255D00E13970 /* ActionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionTableViewController.swift; sourceTree = "<group>"; };
+		94758B1729003E3400E13970 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		94758B1B29007DA900E13970 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		94758B2329041AEC00E13970 /* SubscribeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTableViewCell.swift; sourceTree = "<group>"; };
+		94758B25290427A600E13970 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		94758B2929044D4700E13970 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		94758B2B2905529B00E13970 /* MediaUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		94758B2D290555F700E13970 /* MediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaModel.swift; sourceTree = "<group>"; };
+		94758B332905810E00E13970 /* MediaUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaUserTableViewCell.swift; sourceTree = "<group>"; };
+		94758B352905B44500E13970 /* ActualModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualModel.swift; sourceTree = "<group>"; };
+		94758B372905B4E100E13970 /* ActualCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualCollectionViewCell.swift; sourceTree = "<group>"; };
+		94758B392905B7A300E13970 /* ActualTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualTableViewCell.swift; sourceTree = "<group>"; };
 		949C36CB28FD4FF70049BEDE /* UIKitInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949C36CE28FD4FF70049BEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		949C36D028FD4FF70049BEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		949C36D228FD4FF70049BEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		949C36D228FD4FF70049BEDE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		949C36D528FD4FF70049BEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		949C36D728FD4FF90049BEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		949C36DA28FD4FF90049BEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +61,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94758B2F29055FE100E13970 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94758B1729003E3400E13970 /* CommentModel.swift */,
+				94758B2D290555F700E13970 /* MediaModel.swift */,
+				94758B352905B44500E13970 /* ActualModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94758B302905601D00E13970 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94758B1B29007DA900E13970 /* CommentTableViewCell.swift */,
+				94758B2329041AEC00E13970 /* SubscribeTableViewCell.swift */,
+				94758B2B2905529B00E13970 /* MediaUserCollectionViewCell.swift */,
+				94758B372905B4E100E13970 /* ActualCollectionViewCell.swift */,
+				94758B332905810E00E13970 /* MediaUserTableViewCell.swift */,
+				94758B392905B7A300E13970 /* ActualTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94758B312905603500E13970 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				949C36D228FD4FF70049BEDE /* HomeViewController.swift */,
+				94758B132900255D00E13970 /* ActionTableViewController.swift */,
+				94758B2929044D4700E13970 /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94758B322905605E00E13970 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				94758B25290427A600E13970 /* NSMutableAttributedString.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		949C36C228FD4FF70049BEDE = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +123,12 @@
 			children = (
 				949C36CE28FD4FF70049BEDE /* AppDelegate.swift */,
 				949C36D028FD4FF70049BEDE /* SceneDelegate.swift */,
-				949C36D228FD4FF70049BEDE /* ViewController.swift */,
-				949C36D428FD4FF70049BEDE /* Main.storyboard */,
+				94758B2F29055FE100E13970 /* Model */,
+				94758B302905601D00E13970 /* View */,
+				94758B312905603500E13970 /* Controller */,
+				94758B322905605E00E13970 /* Extension */,
 				949C36D728FD4FF90049BEDE /* Assets.xcassets */,
+				949C36D428FD4FF70049BEDE /* Main.storyboard */,
 				949C36D928FD4FF90049BEDE /* LaunchScreen.storyboard */,
 				949C36DC28FD4FF90049BEDE /* Info.plist */,
 			);
@@ -160,9 +228,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				949C36D328FD4FF70049BEDE /* ViewController.swift in Sources */,
+				94758B2E290555F700E13970 /* MediaModel.swift in Sources */,
+				94758B2C2905529B00E13970 /* MediaUserCollectionViewCell.swift in Sources */,
+				949C36D328FD4FF70049BEDE /* HomeViewController.swift in Sources */,
+				94758B1829003E3400E13970 /* CommentModel.swift in Sources */,
+				94758B1C29007DA900E13970 /* CommentTableViewCell.swift in Sources */,
+				94758B342905810E00E13970 /* MediaUserTableViewCell.swift in Sources */,
+				94758B2A29044D4700E13970 /* SearchViewController.swift in Sources */,
+				94758B362905B44500E13970 /* ActualModel.swift in Sources */,
+				94758B3A2905B7A300E13970 /* ActualTableViewCell.swift in Sources */,
+				94758B382905B4E100E13970 /* ActualCollectionViewCell.swift in Sources */,
 				949C36CF28FD4FF70049BEDE /* AppDelegate.swift in Sources */,
+				94758B26290427A600E13970 /* NSMutableAttributedString.swift in Sources */,
+				94758B2429041AEC00E13970 /* SubscribeTableViewCell.swift in Sources */,
 				949C36D128FD4FF70049BEDE /* SceneDelegate.swift in Sources */,
+				94758B142900255D00E13970 /* ActionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
